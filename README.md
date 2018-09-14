@@ -1,2 +1,0 @@
-# leotomasmc.github.io
-/shrug
