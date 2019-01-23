@@ -1,0 +1,23 @@
+body {background-color: rgb(59,59,59); color: rgb(200, 200, 200); font-family:"Ubuntu"}
+p    {font-family: "Ubuntu"; background: rgb(59,59,59); color: #00ccff}
+a    {color: rgb(20, 240, 38); font-family:"Ubuntu"}
+a.nounderline {text-decoration: none}
+h1   {text-align: center; color: #40d0e0; font-family:"Ubuntu"}
+h2   {text-align: left; color: cyan; font-family: "Ubuntu"}
+
+p.mono {font-family: "Ubuntu Mono"}
+div.container {width:100%; display: flex; background-color: rgb(0,0,0)}
+div.headerButton{width:25%; text-align: center}
+
+button {
+    background-color: #e95420;
+    color: white;
+    padding: 16px;
+    font-size: 16px;
+    border: none;
+    cursor: pointer;
+  }
+  
+button:hover, button:focus {
+    background-color: #f96440;
+  }
