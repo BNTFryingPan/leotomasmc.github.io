@@ -19,6 +19,11 @@
         <script>
             document.getElementById("embed").height = window.innerHeight;
             document.getElementById("embed").width  = window.innerWidth;
+            
+            window.onresize = function() {
+                document.getElementById("embed").height = window.innerHeight;
+                document.getElementById("embed").width  = window.innerWidth;
+            }
         </script>
     </body>
 </html>
