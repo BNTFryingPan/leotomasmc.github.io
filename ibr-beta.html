@@ -15,6 +15,10 @@
     </head>
     
     <body>
-        <embed src="https://thederpymemesquad.github.io/ibr-beta/client/index.html">
+        <embed id="embed" src="https://thederpymemesquad.github.io/ibr-beta/client/index.html">
+        <script>
+            document.getElementById("embed").height = window.innerHeight;
+            document.getElementById("embed").width  = window.innerWidth;
+        </script>
     </body>
 </html>
