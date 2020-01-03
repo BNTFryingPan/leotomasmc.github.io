@@ -1,0 +1,60 @@
+body {
+    color: #fff;
+}
+
+:root {
+    --cont-bg: #222;
+    --obj-bg: #333;
+    --obj-bg-hover: #555;
+    --color-text: #0f0;
+}
+
+#project-list {
+    background-color: var(--cont-bg);
+    border-radius: 1em;
+}
+
+.project-list-row {
+    display:flex;
+}
+
+.project {
+    width: 50%;
+    margin: 0.3em;
+    padding: 0.3em;
+    background-color: var(--obj-bg);
+    border-radius: 0.5em;
+    border-width: 0.15em;
+    border-style: solid;
+    border-color: #000;
+    transition-duration: 100ms;
+}
+
+.project:hover {
+    background-color: var(--obj-bg-hover);
+}
+
+.project-header {
+    width: 100%;
+    font-size: 20px;
+    color: var(--color-text);
+}
+
+#discord-list {
+    background-color: var(--cont-bg);
+}
+
+.discord-server {
+    margin: 0.3em;
+    padding: 0.3em;
+    background-color: var(--obj-bg);
+    border-radius: 0.5em;
+    border-width: 0.15em;
+    border-style: solid;
+    border-color: #000;
+    transition-duration: 100ms;
+}
+
+.discord-server:hover {
+    background-color: var(--obj-bg-hover);
+}
