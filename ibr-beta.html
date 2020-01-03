@@ -1,0 +1,29 @@
+<html>
+    <head>
+        <!-- Global site tag (gtag.js) - Google Analytics -->
+        <script async src="https://www.googletagmanager.com/gtag/js?id=UA-152549306-2"></script>
+        <script>
+            window.dataLayer = window.dataLayer || [];
+            function gtag(){dataLayer.push(arguments);}
+            gtag('js', new Date());
+
+            gtag('config', 'UA-152549306-2');
+        </script>
+
+        <title>Idle Battle Royale Client Beta</title>
+        <link rel="stylesheet" href="style.css" type="text/css">
+    </head>
+    
+    <body stlye="margin: 0; padding: 0;">
+        <embed stlye="margin: 0; padding: 0; position: fixed; top: 0; left: 0;" marginwidth="0" marginheight="0" id="embed" src="https://thederpymemesquad.github.io/ibr-beta/client/index.html">
+        <script>
+            document.getElementById("embed").height = window.innerHeight;
+            document.getElementById("embed").width  = window.innerWidth;
+            
+            window.onresize = function() {
+                document.getElementById("embed").height = window.innerHeight;
+                document.getElementById("embed").width  = window.innerWidth;
+            }
+        </script>
+    </body>
+</html>
