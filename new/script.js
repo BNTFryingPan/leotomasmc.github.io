@@ -84,7 +84,6 @@ window.onload = function() {
     projList = document.getElementById('project-list')
     //var pdiv,phead,pbody,pclick;
     var inhtml = ""
-    console.log('row start')
     for (prj in projects) {
         tp = projects[prj];
 
