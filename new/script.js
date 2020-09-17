@@ -79,7 +79,7 @@ window.onload = function() {
     var title = titles[parseInt(Math.random() * titles.length)];
     document.getElementById('page-title').innerHTML = title;
 
-    document.documentElement.style.setProperty("--color-text", "rgb(" + (Math.floor(Math.random()*200)+55) + ", " + (Math.floor(Math.random()*255)+55) + ", " + (Math.floor(Math.random()*255)+55) + ")")
+    //document.documentElement.style.setProperty("--color-text", "rgb(" + (Math.floor(Math.random()*200)+55) + ", " + (Math.floor(Math.random()*255)+55) + ", " + (Math.floor(Math.random()*255)+55) + ")")
 
     projList = document.getElementById('project-list')
     //var pdiv,phead,pbody,pclick;

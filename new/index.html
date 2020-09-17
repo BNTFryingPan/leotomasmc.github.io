@@ -8,6 +8,23 @@
             gtag('js', new Date());
 
             gtag('config', 'UA-152549306-1');
+
+            //load color scheme from local storage if it exists
+            if (window.localStorage.getItem("ColorScheme")) {
+                let cs = JSON.parse(window.localStorage.getItem("ColorScheme"))
+                document.documentElement.style.setProperty("--color-text", "rgb(" + cs["r"] + ", " + cs["g"] + ", " + cs["b"] + ")")
+            } else {
+                updateColorScheme()
+            }
+
+            function updateColorScheme() {
+                let r = (Math.floor(Math.random()*200)+55)
+                let g = (Math.floor(Math.random()*200)+55)
+                let b = (Math.floor(Math.random()*200)+55)
+                document.documentElement.style.setProperty("--color-text", "rgb(" + r + ", " + g + ", " + b + ")")
+                let colorScheme = {"r": r, "g": g, "b": b}
+                window.localStorage["ColorScheme"] = JSON.stringify(colorScheme)
+            }
         </script>
 
         <title id='page-title'>ok boomer</title>
@@ -19,13 +36,14 @@
     <body>
         <div id="links">
             |
+            <a href="https://leotomasmc.github.io/new">home</a> |
             <a href="https://www.twitch.tv/leotomas">twitch</a> |
             <a href="https://twitter.com/LeotomasMC">twitter</a> |
             <a href="discords.html">discord servers</a> |
             <a href="https://gist.github.com/LeotomasMC">gists</a> |
             <a href="https://github.com/LeotomasMC">github</a> |
             <a href="https://github.com/LeotomasMC/leotomasmc.github.io">source</a> |
-            <a onclick='event.preventDefault();document.documentElement.style.setProperty("--color-text", "rgb(" + (Math.floor(Math.random()*200)+55) + ", " + (Math.floor(Math.random()*255)+55) + ", " + (Math.floor(Math.random()*255)+55) + ")")'>colors</a> |
+            <a onclick='event.preventDefault();updateColorScheme()'>colors</a> |
         </div>
         <div>hey, heres some stuff i make</div>
         <div id='project-list'>
