@@ -16,6 +16,24 @@ var bcdm = {
     "url": "https://leotomasmc.github.io/bongo-cat/index.html"
 }
 
+var brigadierjs = {
+    "header": "Brigadier.js",
+    "desc": "A JavaScript implementation of Mojang's Brigader command parser and dispatcher",
+    "url": "https://github.com/LeotomasMC/brigadier-js"
+}
+
+var ssbump = {
+    "header": "SSBU Music Player",
+    "desc": "A Music Player in node.js that is designed to have a lot of functionality, and looks like the music player in Smash Ultimate",
+    "url": "https://github.com/LeotomasMC/ssbu-music-player"
+}
+
+var twitchgolf = {
+    "header": "Twitch Golf",
+    "desc": "A Twitch interactive game where the streamer is trying to play golf, but chat cant allow that to happen",
+    "url": "https://github.com/thederpymemesquad/twitch-golf"
+}
+
 var tdmb = {
     "header": "TheDerpyMemeBot",
     "desc": "A discord and twitch chat bot",
@@ -34,7 +52,19 @@ var ttvcolor = {
     "url": "https://github.com/LeotomasMC/Twitch-Color-SelfBot"
 }
 
-var projects = [ibr, ibr_beta, bcdm, tdmb, pycc, ttvcolor]
+var rlbmscript = {
+    "header": "Rocket League Bakkes Mod Launch script",
+    "desc": "A batch script to launch Bakkes Mod and Rocket League at the same time",
+    "url": "https://gist.github.com/LeotomasMC/e335632e21739bfcc8e383d62f3c7975"
+}
+
+var coasbot = {
+    "header": "Twitch Plays Car On A Stick",
+    "desc": "exactly what it sounds like",
+    "url": "https://gist.github.com/LeotomasMC/f78d791978222bf00db0815609f1d278"
+}
+
+var projects = [ibr, ibr_beta, bcdm, brigadierjs, ssbump, twitchgolf, tdmb, pycc, ttvcolor, rlbmscript, coasbot]
 
 function gotoUrl(url) {
     window.location.href = url;
@@ -48,6 +78,9 @@ window.onload = function() {
     
     var title = titles[parseInt(Math.random() * titles.length)];
     document.getElementById('page-title').innerHTML = title;
+
+    Math.random()
+    document.documentElement.style.setProperty("--color-text", "rgb(" + (Math.floor(Math.random()*200)+55) + ", " + (Math.floor(Math.random()*255)+55) + ", " + (Math.floor(Math.random()*255)+55) + ")")
 
     projList = document.getElementById('project-list')
     //var pdiv,phead,pbody,pclick;

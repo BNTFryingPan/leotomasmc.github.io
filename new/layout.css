@@ -1,5 +1,9 @@
 body {
     color: #fff;
+    background-color: rgb(59,59,59);
+    font-family:"Ubuntu";
+    margin: 0;
+    padding: 0;
 }
 
 :root {
@@ -7,6 +11,17 @@ body {
     --obj-bg: #333;
     --obj-bg-hover: #555;
     --color-text: #0f0;
+}
+
+a {
+    color: var(--color-text);
+    font-family:"Ubuntu";
+}
+
+h1 {
+    text-align: center;
+    color: #40d0e0;
+    font-family:"Ubuntu Bold";
 }
 
 #project-list {
@@ -28,6 +43,7 @@ body {
     border-style: solid;
     border-color: #000;
     transition-duration: 100ms;
+    cursor: default;
 }
 
 .project:hover {
@@ -38,6 +54,7 @@ body {
     width: 100%;
     font-size: 20px;
     color: var(--color-text);
+    cursor: pointer
 }
 
 #discord-list {
