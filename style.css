@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css2?family=Ubuntu:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400;1,500;1,700&display=swap');
+
 body {
     background-color: rgb(59,59,59);
     color: rgb(200, 200, 200);
@@ -6,13 +8,17 @@ body {
     padding: 0;
 }
 
+:root {
+    --color-text: #0f0;
+}
+
 a {
-    color: rgb(20, 240, 38);
+    color: var(--color-text);
     font-family:"Ubuntu";
 }
 
 h1 {
     text-align: center;
-    color: #40d0e0;
+    color: var(--color-text);
     font-family:"Ubuntu Bold";
 }

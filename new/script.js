@@ -79,7 +79,6 @@ window.onload = function() {
     var title = titles[parseInt(Math.random() * titles.length)];
     document.getElementById('page-title').innerHTML = title;
 
-    Math.random()
     document.documentElement.style.setProperty("--color-text", "rgb(" + (Math.floor(Math.random()*200)+55) + ", " + (Math.floor(Math.random()*255)+55) + ", " + (Math.floor(Math.random()*255)+55) + ")")
 
     projList = document.getElementById('project-list')
@@ -109,7 +108,7 @@ window.onload = function() {
         pdiv.appendChild(pbody);
 
         projList.appendChild(pdiv);*/
-        if (prj % 4 == 0) {
+        if (prj % 6 == 0) {
             inhtml += "</div><div class='project-list-row'>"
         }
         inhtml += "<div class='project' onclick='gotoUrl(\"" + tp['url'] + "\")'><span class='project-header'>" + tp['header'] + "</span><hr><div class='project-details'>" + tp['desc'] + "</div></div>"

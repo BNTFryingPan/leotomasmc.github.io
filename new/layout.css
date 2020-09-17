@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css2?family=Ubuntu:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400;1,500;1,700&display=swap');
+
 body {
     color: #fff;
     background-color: rgb(59,59,59);
@@ -34,7 +36,7 @@ h1 {
 }
 
 .project {
-    width: 50%;
+    min-width: 10%;
     margin: 0.3em;
     padding: 0.3em;
     background-color: var(--obj-bg);
@@ -59,9 +61,11 @@ h1 {
 
 #discord-list {
     background-color: var(--cont-bg);
+    border-radius: 1em;
 }
 
 .discord-server {
+    min-width: 20%;
     margin: 0.3em;
     padding: 0.3em;
     background-color: var(--obj-bg);
@@ -70,6 +74,16 @@ h1 {
     border-style: solid;
     border-color: #000;
     transition-duration: 100ms;
+    cursor: default;
+}
+
+.discord-list-row {
+    display:flex;
+}
+
+.discord-server > span {
+    color: var(--color-text);
+    cursor: pointer;
 }
 
 .discord-server:hover {

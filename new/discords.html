@@ -6,45 +6,66 @@
         <script>
             function url(url) {
                 window.location.href = url;
-            }   
+            }
+            document.documentElement.style.setProperty("--color-text", "rgb(" + (Math.floor(Math.random()*200)+55) + ", " + (Math.floor(Math.random()*255)+55) + ", " + (Math.floor(Math.random()*255)+55) + ")")
         </script>
     </head>
 
     <body>
-        <span>here are some discord servers that i own</span>
+        <div id="links">
+            |
+            <a href="https://leotomasmc.github.io/new">home</a> |
+            <a href="https://www.twitch.tv/leotomas">twitch</a> |
+            <a href="https://twitter.com/LeotomasMC">twitter</a> |
+            <a href="discords.html">discord servers</a> |
+            <a href="https://gist.github.com/LeotomasMC">gists</a> |
+            <a href="https://github.com/LeotomasMC">github</a> |
+            <a href="https://github.com/LeotomasMC/leotomasmc.github.io">source</a> |
+            <a onclick='event.preventDefault();document.documentElement.style.setProperty("--color-text", "rgb(" + (Math.floor(Math.random()*200)+55) + ", " + (Math.floor(Math.random()*255)+55) + ", " + (Math.floor(Math.random()*255)+55) + ")")'>colors</a> |
+        </div>
+        <div>here are some discord servers that i own</div>
         <div id='discord-list'>
-            <div class='discord-server' onclick="url('https:\/\/discord.gg/2KHYQPX')">
-                <span>The Derpy Meme Squad</span>
-                <hr>
-                <div>my main, but least used server</div>
-            </div>
-            <div class='discord-server' onclick="url('https:\/\/discord.gg/S7eDz8J')">
-                <span>The DerpyMeme Minecraft Server</span>
-                <hr>
-                <div>discord server specifically for my minecraft servers</div>
-            </div>
-            <div class='discord-server' onclick="url('https:\/\/discord.gg/WQEr3PY')">
-                <span>TheDerpyMemeBot Support Server</span>
-                <hr>
-                <div>discord server for support for my discord and twitch bot</div>
-            </div>
-            <div class='discord-server' onclick="//url('https:\/\/discord.gg/ypVVrR5')">
-                <span>TheDerpyMemeBot Ban Appeals Server</span>
-                <hr>
-                <div>
-                    discord server for people to request to be unbanned, also contains ban history and unban history<br>
-                    Unlinked for right now due to bot being offline, and i dont want spam in it
+            <div class="discord-list-row">
+                <div class='discord-server' onclick="url('https:\/\/discord.gg/2KHYQPX')">
+                    <span>The Derpy Meme Squad</span>
+                    <hr>
+                    <div>my main, but least used server</div>
+                </div>
+                <div class='discord-server' onclick="url('https:\/\/discord.gg/S7eDz8J')">
+                    <span>The DerpyMeme Minecraft Server</span>
+                    <hr>
+                    <div>discord server specifically for my minecraft servers</div>
+                </div>
+                <div class='discord-server' onclick="url('https:\/\/discord.gg/WQEr3PY')">
+                    <span>TheDerpyMemeBot Support Server</span>
+                    <hr>
+                    <div>discord server for support for my discord and twitch bot</div>
+                </div>
+                <div class='discord-server' onclick="//url('https:\/\/discord.gg/ypVVrR5')">
+                    <span>TheDerpyMemeBot Ban Appeals Server</span>
+                    <hr>
+                    <div>
+                        discord server for people to request to be unbanned, also contains ban history and unban history<br>
+                        Unlinked for right now due to bot being offline, and i dont want spam in it
+                    </div>
                 </div>
             </div>
-            <div class='discord-server' onclick="url('https:\/\/discord.gg/nHkGBun')">
-                <span>Idle Battle Royale</span>
-                <hr>
-                <div>home of idle battle royale discussion</div>
-            </div>
-            <div class='discord-server' style="color: #f22" onclick="url('https:\/\/discord.gg/u3d4r8E')">
-                <span>Titan Fam</span>
-                <hr>
-                <div><b>i dont own this server.</b> server that i moderate</div>
+            <div class="discord-list-row">
+                <div class='discord-server' onclick="url('https:\/\/discord.gg/nHkGBun')">
+                    <span>Idle Battle Royale</span>
+                    <hr>
+                    <div>home of idle battle royale discussion</div>
+                </div>
+                <div class='discord-server' onclick="url('https:\/\/discord.gg/u3d4r8E')">
+                    <span style="color: #f22">Titan Fam</span>
+                    <hr>
+                    <div><span style="color: #f00">i dont own this server.</span> server that i moderate</div>
+                </div>
+                <div class="discord-server" onclick="url('https:\/\/discord.gg/ksDkq57')">
+                    <span>??? ??? ???</span>
+                    <hr>
+                    <div>asdfsafasdgfdsdsfisadhfoa</div>
+                </div>
             </div>
         </div>
     </body>
