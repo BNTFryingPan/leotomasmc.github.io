@@ -70,7 +70,7 @@ var coasbot = {
     "url": "https://gist.github.com/LeotomasMC/f78d791978222bf00db0815609f1d278"
 }
 
-var projects = [ibr, ibr_beta, bcdm, brigadierjs, ssbump, twitchgolf, tdmb, pycc, ttvcolor, rlbmscript, coasbot]
+var projects = [cf, ibr, ibr_beta, bcdm, brigadierjs, ssbump, twitchgolf, tdmb, pycc, ttvcolor, rlbmscript, coasbot]
 
 function gotoUrl(url) {
     window.location.href = url;
