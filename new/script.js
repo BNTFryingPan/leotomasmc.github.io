@@ -1,3 +1,9 @@
+var cf = {
+    "header": "chroma-fighters",
+    "desc": "a 2d pixel art platform fighter that will hopefully have mods",
+    "url": "https://leotomasmc.github.io/cf"
+}
+
 var ibr = {
     "header": "Idle Battle Royale",
     "desc": "A Multiplayer Idle game with lootboxes",
